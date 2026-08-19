@@ -16,6 +16,9 @@
 			"transformations": [
 				{
 					"name": "FilterSalary"
+				},
+				{
+					"name": "derivedColumn1"
 				}
 			],
 			"scriptLines": [
@@ -29,7 +32,8 @@
 				"     validateSchema: false,",
 				"     isolationLevel: 'READ_UNCOMMITTED',",
 				"     format: 'table') ~> SourceEmployees",
-				"SourceEmployees filter(salary > 50000) ~> FilterSalary"
+				"SourceEmployees filter(salary > 50000) ~> FilterSalary",
+				"FilterSalary derive(AnnualSalary = salary * 12) ~> derivedColumn1"
 			]
 		}
 	}
