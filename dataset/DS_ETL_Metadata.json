@@ -1,0 +1,42 @@
+{
+	"name": "DS_ETL_Metadata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SourceSchema",
+				"type": "varchar"
+			},
+			{
+				"name": "SourceTable",
+				"type": "varchar"
+			},
+			{
+				"name": "SinkFolder",
+				"type": "varchar"
+			},
+			{
+				"name": "SinkFile",
+				"type": "varchar"
+			},
+			{
+				"name": "IsActive",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ETL_Metadata"
+		}
+	}
+}
