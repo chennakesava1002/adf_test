@@ -78,6 +78,44 @@
 								"enableStaging": false,
 								"translator": {
 									"type": "TabularTranslator",
+									"mappings": [
+										{
+											"source": {
+												"name": "EmployeeID",
+												"type": "String"
+											},
+											"sink": {
+												"name": "employee_id"
+											}
+										},
+										{
+											"source": {
+												"name": "Department",
+												"type": "String"
+											},
+											"sink": {
+												"name": "department"
+											}
+										},
+										{
+											"source": {
+												"name": "Name",
+												"type": "String"
+											},
+											"sink": {
+												"name": "employee_name"
+											}
+										},
+										{
+											"source": {
+												"name": "JoiningDate",
+												"type": "String"
+											},
+											"sink": {
+												"name": "joining_date"
+											}
+										}
+									],
 									"typeConversion": true,
 									"typeConversionSettings": {
 										"allowDataTruncation": true,
