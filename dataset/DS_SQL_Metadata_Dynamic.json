@@ -1,0 +1,17 @@
+{
+	"name": "DS_SQL_Metadata_Dynamic",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SalesMetadata_SQL",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"pTableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
