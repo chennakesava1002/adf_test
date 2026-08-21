@@ -1,0 +1,60 @@
+{
+	"name": "DS_SQL_EntityConfig",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SalesMetadata_SQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "EntityConfigID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SourceSystemID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "EntityName",
+				"type": "varchar"
+			},
+			{
+				"name": "SourceContainer",
+				"type": "varchar"
+			},
+			{
+				"name": "SourceFolder",
+				"type": "varchar"
+			},
+			{
+				"name": "SourceFileName",
+				"type": "varchar"
+			},
+			{
+				"name": "TargetSchema",
+				"type": "varchar"
+			},
+			{
+				"name": "TargetTable",
+				"type": "varchar"
+			},
+			{
+				"name": "IsActive",
+				"type": "bit"
+			},
+			{
+				"name": "CreatedDate",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "meta",
+			"table": "EntityConfig"
+		}
+	}
+}
