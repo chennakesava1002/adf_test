@@ -96,16 +96,6 @@
 									"type": "Date",
 									"physicalType": "date"
 								}
-							},
-							{
-								"source": {
-									"name": "Location"
-								},
-								"sink": {
-									"name": "location",
-									"type": "String",
-									"physicalType": "varchar"
-								}
 							}
 						],
 						"typeConversion": true,
