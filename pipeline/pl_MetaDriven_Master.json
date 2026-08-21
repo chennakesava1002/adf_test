@@ -90,6 +90,14 @@
 										},
 										{
 											"source": {
+												"name": "EmployeeName"
+											},
+											"sink": {
+												"name": "employee_name"
+											}
+										},
+										{
+											"source": {
 												"name": "Department",
 												"type": "String"
 											},
@@ -99,11 +107,10 @@
 										},
 										{
 											"source": {
-												"name": "Name",
-												"type": "String"
+												"name": "Salary"
 											},
 											"sink": {
-												"name": "employee_name"
+												"name": "salary"
 											}
 										},
 										{
@@ -113,6 +120,14 @@
 											},
 											"sink": {
 												"name": "joining_date"
+											}
+										},
+										{
+											"source": {
+												"name": "Location"
+											},
+											"sink": {
+												"name": "location"
 											}
 										}
 									],
