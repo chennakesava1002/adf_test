@@ -27,6 +27,25 @@
 					},
 					"firstRowOnly": false
 				}
+			},
+			{
+				"name": "ForEach_Entity",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "GetActiveEntities",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('GetActiveEntities').output.value",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"annotations": []
