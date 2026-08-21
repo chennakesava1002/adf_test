@@ -90,7 +90,8 @@
 										},
 										{
 											"source": {
-												"name": "EmployeeName"
+												"name": "Name",
+												"type": "String"
 											},
 											"sink": {
 												"name": "employee_name"
@@ -107,27 +108,11 @@
 										},
 										{
 											"source": {
-												"name": "Salary"
-											},
-											"sink": {
-												"name": "salary"
-											}
-										},
-										{
-											"source": {
 												"name": "JoiningDate",
 												"type": "String"
 											},
 											"sink": {
 												"name": "joining_date"
-											}
-										},
-										{
-											"source": {
-												"name": "Location"
-											},
-											"sink": {
-												"name": "location"
 											}
 										}
 									],
