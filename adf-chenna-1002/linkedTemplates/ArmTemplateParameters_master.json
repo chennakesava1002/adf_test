@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-chenna-1002"
+		},
+		"LS_AzureSQL_password": {
+			"value": ""
+		},
+		"LS_SalesMetadata_Blob_connectionString": {
+			"value": ""
+		},
+		"LS_SalesMetadata_SQL_password": {
+			"value": ""
+		},
+		"LS_AzureSQL_properties_typeProperties_server": {
+			"value": "adf-sql-server-1002.database.windows.net"
+		},
+		"LS_AzureSQL_properties_typeProperties_database": {
+			"value": "SalesMetadataDB"
+		},
+		"LS_AzureSQL_properties_typeProperties_userName": {
+			"value": "chenna-server-admin"
+		},
+		"LS_SalesMetadata_SQL_properties_typeProperties_server": {
+			"value": "adf-sql-server-1002.database.windows.net"
+		},
+		"LS_SalesMetadata_SQL_properties_typeProperties_database": {
+			"value": "SalesMetadataDB"
+		},
+		"LS_SalesMetadata_SQL_properties_typeProperties_userName": {
+			"value": "chenna-server-admin"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
