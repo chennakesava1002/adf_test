@@ -90,14 +90,8 @@
 									"referenceName": "DS_Blob_Employees_CSV",
 									"type": "DatasetReference",
 									"parameters": {
-										"pDirectory": {
-											"value": "@item().Directory",
-											"type": "Expression"
-										},
-										"pFileName": {
-											"value": "@item().FileName",
-											"type": "Expression"
-										}
+										"pDirectory": "@item().SourceFolder",
+										"pFileName": "@item().SourceFileName"
 									}
 								}
 							],
