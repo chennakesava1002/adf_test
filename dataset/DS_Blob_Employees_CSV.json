@@ -5,6 +5,16 @@
 			"referenceName": "LS_SalesMetadata_Blob",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"pDirectory": {
+				"type": "string",
+				"defaultValue": "Directory"
+			},
+			"pFileName": {
+				"type": "string",
+				"defaultValue": "employees.csv"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
