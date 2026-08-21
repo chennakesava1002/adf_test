@@ -108,7 +108,11 @@
 				"inputs": [
 					{
 						"referenceName": "DS_Blob_Employees_CSV",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"pDirectory": ".",
+							"pFileName": "employees.csv"
+						}
 					}
 				],
 				"outputs": [
