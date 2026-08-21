@@ -78,6 +78,70 @@
 								"enableStaging": false,
 								"translator": {
 									"type": "TabularTranslator",
+									"mappings": [
+										{
+											"source": {
+												"name": "EmployeeID",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "employee_id",
+												"type": "Int32",
+												"physicalType": "int"
+											}
+										},
+										{
+											"source": {
+												"name": "Name",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "employee_name",
+												"type": "String",
+												"physicalType": "varchar"
+											}
+										},
+										{
+											"source": {
+												"name": "Department",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "department",
+												"type": "String",
+												"physicalType": "varchar"
+											}
+										},
+										{
+											"source": {
+												"name": "Salary",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "salary",
+												"type": "Decimal",
+												"physicalType": "decimal",
+												"scale": 2,
+												"precision": 10
+											}
+										},
+										{
+											"source": {
+												"name": "JoiningDate",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "joining_date",
+												"type": "Date",
+												"physicalType": "date"
+											}
+										}
+									],
 									"typeConversion": true,
 									"typeConversionSettings": {
 										"allowDataTruncation": true,
